@@ -1,0 +1,23 @@
+print "Welcome to the Angry Sports Coach app. By generating random rants you too can become an angry sports coach and yell at your team."
+sport = raw_input('Which sport are you coaching: soccer, football or basketball?')
+if sport == "soccer":
+        print "You have selected soccer."
+elif sport == "football":
+        print "You have selected football."     
+elif sport == "basketball":
+        print "You have selected basketball."   
+else:
+    	print "invalid response"
+
+print "How many sentences do you want to rant?"
+rantsize = int(raw_input())
+print ("Your rant will be %d lines long." % rantsize)
+
+import random
+group_of_items = {"This is awful awful awful!", "Come out of your coma!", "We lose games because we are stupid!" , }               
+num_to_select = rantsize                           
+list_of_random_items = random.sample(group_of_items, rantsize)
+first_random_item = list_of_random_items[0]
+second_random_item = list_of_random_items[0] 
+print list_of_random_items
+#make rants recognize sport variable
